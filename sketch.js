@@ -51,12 +51,8 @@ function draw() {
     //health
     fill(0, 255, 0);
     noStroke();
-    if(p1Health <= 125){
-        fill("yellow");
-        
-    }
     rect(0, 550, p1Health, 50);
-    rect(375, 0, p2Health, 50);
+    
     //moves
     for (let i = 0; i < moves.length; i++) {
         fill(typeColors[i]);
