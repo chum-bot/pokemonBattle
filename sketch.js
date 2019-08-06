@@ -119,6 +119,7 @@ function keyPressed() {
                         flamethrower.pp -= 10;
                         if (critRatio < 6.25) {
                             flamethrower.damage *= 1.5;
+                            alert("A critical hit!");
                         }
                         p2Health -= flamethrower.damage;
                     }
@@ -131,6 +132,7 @@ function keyPressed() {
                         waterPulse.pp -= 20;
                         if (critRatio < 6.25) {
                             waterPulse.damage *= 1.5;
+                            alert("A critical hit!");
                         }
                         p2Health -= waterPulse.damage;
                     }
@@ -143,6 +145,7 @@ function keyPressed() {
                     if (p1Health > 0 && p2Health > 0) {
                         if (critRatio < 6.25) {
                             magicalLeaf.damage *= 1.5;
+                            alert("A critical hit!");
                         }
                         magicalLeaf.pp -= 5;
                         p2Health -= magicalLeaf.damage;
@@ -164,6 +167,7 @@ function keyPressed() {
                         fireBlast.pp -= 20;
                         if (critRatio < 6.25) {
                             fireBlast.damage *= 1.5;
+                            alert("A critical hit!");
                         }
                         p1Health -= fireBlast.damage;
                     }
@@ -177,6 +181,7 @@ function keyPressed() {
                         bubblebeam.pp -= 5;
                         if (critRatio < 6.25) {
                             bubblebeam.damage *= 1.5;
+                            alert("A critical hit!");
                         }
                         p1Health -= bubblebeam.damage;
                     }
@@ -189,7 +194,8 @@ function keyPressed() {
                     if (p1Health > 0 && p2Health > 0) {
                         razorLeaf.pp -= 10;
                         if (critRatio < 6.25) {
-                            razorLeaf.damage *= 1.5;
+                            razorLeaf.damage *= 1.5; 
+                            alert("A critical hit!");
                         }
                         p1Health -= razorLeaf.damage;
                     }
